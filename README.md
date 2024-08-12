@@ -117,10 +117,78 @@ Evaluates the model’s performance for every combination by Hyperparameters
 
 #### K-Means clustering Analysis![image](https://github.com/user-attachments/assets/b65c8fda-2f20-477d-a19d-07600b0c8aae)
 
-Raw Data accuracy outperforms Transformed data
-Weak precision and recall for fraudulent accounts
-Transformed data shows better precision and recall
-![image](https://github.com/user-attachments/assets/355f8e88-a042-4752-9237-b8186e1eb8a1)
+1. Raw Data accuracy outperforms Transformed data
+2. Weak precision and recall for fraudulent accounts
+3. Transformed data shows better precision and recall
+
+Confusion matrix for Raw dataset
+
+<img width="175" alt="image" src="https://github.com/user-attachments/assets/d43a6c7d-08e1-446a-af16-f14afba77b6e">
+
+Confusion matrix for Transformed dataset
+
+<img width="186" alt="image" src="https://github.com/user-attachments/assets/12d46cf1-bd18-40d8-b1f7-fb9076697727">
+
+
+#### Anamoly Detection
+
+1. Raw Data accuracy outperforms Transformed data
+2. Weak precision and recall for fraudulent accounts
+3. Transformed data shows better precision and recall
+  
+Precision
+   
+<img width="176" alt="image" src="https://github.com/user-attachments/assets/fa1ffac1-27ab-4f3f-a7c7-49ac845e8988">
+
+Recall
+
+<img width="177" alt="image" src="https://github.com/user-attachments/assets/263dad5d-55c8-4921-a11d-9d224ceaa9d0">
+
+Ensemble Learning Analysis
+
+1. The model has high accuracy on both training and test sets
+2. Zero precision and recall for fraudulent accounts
+3. Transformed data shows better precision and recall
+
+KFold Validation Learning Curve for raw
+
+<img width="176" alt="image" src="https://github.com/user-attachments/assets/804f5f7c-c6f1-489a-805d-c0e5129b3d00">
+
+KFold validation for Transformed
+
+<img width="168" alt="image" src="https://github.com/user-attachments/assets/32cd83bf-b07d-4c50-9798-6abb5134a965">
+
+
+## Conclusion
+
+Based on all algorithms' accuracy scores and classification reports, the dataset's quality plays a significant role in developing a robust prediction model.
+1.	The dataset should have a balanced distribution of classes or outcomes. The BAF dataset is highly imbalanced, which lead to biased models favoring legitimate accounts and performing poorly on fraudulent accounts.
+2.	The data should be accurate, consistent, and free from errors or outliers. Many features of the BAF dataset had a skewed distribution due to outliers that negatively impacted the model's performance and reliability.
+3.	The dataset should capture the variability and diversity present in real-world scenarios. Many features have imbalances that prevented the model from learning robust patterns and generalizing well to fraudulent accounts.
+4.	The presence of highly correlated features in the BAF dataset leads to issues like redundancy or multi-collinearity. Removing them improved the model's performance.
+5.	K-Means, Ensemble learning and One class SVM are outperformers with decent accuracy and better ability to classify both fraudulent and legitimate accounts.
+
+
+### Recommendations
+
+1.	Leveraging the complete variant of the dataset with 1M records can have drastic improvement in performance of algorithms like Anamoly detection.
+2.	Explore deep learning models and neural network architectures. Time series would be most relevant for real time fraud detection
+3.	Consider simpler, more interpretable models or use tools like SHAP or LIME to understand and improve complex models.
+4.	Use parallel computation or GPUs to speed up model training and hyperparameter tuning.
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
 
 
 
