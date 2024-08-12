@@ -6,3 +6,27 @@ Every year, financial institutions lose billions of dollars to fraud. Identity t
 
 The dataset used in this analysis is the Bank Application Fraud Dataset published at Neuro IPS 2022.
 
+|                 |  | 
+| --------------- | --------------- | 
+| **Sample**     | 1 M    | 
+| **Population**     | Subjects who had applied for bank account    | 
+| **# of Categorical Variables**     | 16    | 
+| **# of Numerical variables**     | 15    | 
+| **Missing values**     | Yes    | 
+| **Prediction type**     | Classification    | 
+
+## Data Cleaning and Preparation
+
+1. Handling missing values
+2. Encoding Categorical variables
+3. Scaling and Normalization
+4. Handling outliers
+
+
+## Exploratory Data Analysis
+
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/e94f89d5-c72b-4f29-9427-3df244dde65b">
+
+
+
+
